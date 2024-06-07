@@ -1,6 +1,14 @@
 import { Typography } from '@mui/material';
 import Image from 'next/image';
-import { FirstLine, SecondLine, ThirdLine, BannerContainer, TextContainer } from './Banner.styled';
+import {
+  FirstLine,
+  SecondLine,
+  ThirdLine,
+  BannerContainer,
+  TextContainer,
+  HeartBeating,
+  ImageContainer,
+} from './Banner.styled';
 
 const height = 450;
 
@@ -13,7 +21,10 @@ const Banner = () => (
         <SecondLine>Cirurgia Vascular</SecondLine>
         <ThirdLine>All together now</ThirdLine>
       </TextContainer>
-      <Image src={'/static/banner_no_back_1.png'} height={height} width={1.4 * height} alt={''} />
+      <ImageContainer>
+        <HeartBeating src={'/static/heart.png'} height={82} width={85} alt="heart-beating" />
+        <Image src={'/static/banner_no_back_1.png'} height={height} width={1.4 * height} alt={'chest'} />
+      </ImageContainer>
     </BannerContainer>
     <div style={{ background: '#d95650', height: '42px' }} />
   </>
