@@ -56,6 +56,7 @@ export const ImageContainer = styled('div')({
 export const HeartBeating = styled(Image)({
   position: 'absolute',
   marginLeft: '28px',
+  marginTop: '10px',
   animation: 'beat 1.3s infinite',
   '@keyframes beat': {
     '0%, 100%': {
