@@ -6,51 +6,59 @@ import LocalCafeSharpIcon from '@mui/icons-material/LocalCafeSharp';
 import CollectionsBookmarkSharpIcon from '@mui/icons-material/CollectionsBookmarkSharp';
 import { AgendaContainer } from './Agenda.styled';
 
-const iconStyle = { width: '32px', height: '32px', color: 'black' };
+const iconStyle = { width: '32px', height: '32px' };
 
 const eventColors = {
-  session: 'radial-gradient(circle, rgba(237,237,237,1) 20%, rgba(141,169,182,1) 60%, rgba(27,57,86,1) 100%)',
-  other: 'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 100%)',
+  session: '#9f0d06',
+  other: '#1B3956',
 };
+
+const firstDay = '27 Setembro';
 
 const agenda = [
   {
-    start: '09:00',
+    start: '09h00',
+    day: firstDay,
     title: 'Doença Venosa Crónica',
     speaker: 'Dr. Manuel Silva',
     icon: <SpeakerNotesSharpIcon style={iconStyle} />,
-    iconBackground: eventColors.session,
+    mainColor: eventColors.session,
   },
   {
-    start: '10:00',
+    start: '10h00',
+    day: firstDay,
     title: 'Abertura',
     icon: <MeetingRoomSharpIcon style={iconStyle} />,
-    iconBackground: eventColors.other,
+    mainColor: eventColors.other,
   },
   {
     start: '10h30',
+    day: firstDay,
     title: 'Coffee Break',
     icon: <LocalCafeSharpIcon style={iconStyle} />,
-    iconBackground: eventColors.other,
+    mainColor: eventColors.other,
   },
   {
     start: '11h00',
+    day: firstDay,
     title: 'Trombose Venosa',
     speaker: 'Dra. Ana Santos',
     icon: <SpeakerNotesSharpIcon style={iconStyle} />,
-    iconBackground: eventColors.session,
+    mainColor: eventColors.session,
   },
   {
     start: '12h00',
+    day: firstDay,
     title: 'Apresentação dos melhores trabalhos',
     icon: <CollectionsBookmarkSharpIcon style={iconStyle} />,
-    iconBackground: eventColors.session,
+    mainColor: eventColors.session,
   },
   {
     start: '12h30',
+    day: firstDay,
     title: 'Almoço',
     icon: <RestaurantSharpIcon style={iconStyle} />,
-    iconBackground: eventColors.other,
+    mainColor: eventColors.other,
   },
 ];
 

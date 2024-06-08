@@ -1,11 +1,21 @@
-import { AgendaItemContainer, ItemDetails, ItemWrapper } from './AgendaItem.styled';
+import {
+  AgendaItemContainer,
+  EventDay,
+  ItemDetails,
+  ItemWrapper,
+  ScheduleWrapper,
+  StartTime,
+  EventTitle,
+} from './AgendaItem.styled';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 
 type AgendaItem = {
   start: string;
+  day: string;
   title: string;
   speaker?: string;
   icon: React.ReactNode;
-  iconBackground: string;
+  mainColor: string;
 };
 
 type AgendaItemProps = {
@@ -13,16 +23,24 @@ type AgendaItemProps = {
 };
 
 const AgendaItem = ({ item }: AgendaItemProps) => {
-  const { start, title, speaker, icon, iconBackground } = item;
+  const { start, title, speaker, icon, mainColor, day } = item;
+
+  const handleItemClick = () => {
+    alert(`Em desenvolvimento`);
+  };
 
   return (
-    <AgendaItemContainer>
-      <ItemWrapper background={iconBackground}>{icon}</ItemWrapper>
-      <span>{start}</span>
+    <AgendaItemContainer onClick={handleItemClick}>
+      <ItemWrapper color={mainColor}>{icon}</ItemWrapper>
+      <ScheduleWrapper>
+        <StartTime color={mainColor}>{start}</StartTime>
+        <EventDay color={mainColor}>{day}</EventDay>
+      </ScheduleWrapper>
       <ItemDetails>
-        <span>{title}</span>
+        <EventTitle>{title}</EventTitle>
         {speaker && <span>{speaker}</span>}
       </ItemDetails>
+      <ArrowForwardIosSharpIcon />
     </AgendaItemContainer>
   );
 };

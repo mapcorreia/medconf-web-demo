@@ -5,7 +5,6 @@ import HomePageSection from 'components/HomePageSection';
 import AppRegistrationSharpIcon from '@mui/icons-material/AppRegistrationSharp';
 import InterpreterModeSharpIcon from '@mui/icons-material/InterpreterModeSharp';
 import EventNoteSharpIcon from '@mui/icons-material/EventNoteSharp';
-import AgendaItem from 'components/AgendaItem';
 import Agenda from 'components/Agenda';
 
 const speakerIcon = <InterpreterModeSharpIcon style={{ width: '65px', height: '65px', color: 'white' }} />;
