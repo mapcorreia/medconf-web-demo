@@ -25,8 +25,12 @@ const speakers = [
 ];
 
 const Speakers = () => {
+  const handleSpeakerClick = () => {
+    alert('Em desenvolvimento');
+  };
+
   return (
-    <SpeakersContainer>
+    <SpeakersContainer onClick={handleSpeakerClick}>
       {speakers.map(speaker => (
         <SpeakerItem speaker={speaker} />
       ))}
