@@ -6,6 +6,7 @@ import AppRegistrationSharpIcon from '@mui/icons-material/AppRegistrationSharp';
 import InterpreterModeSharpIcon from '@mui/icons-material/InterpreterModeSharp';
 import EventNoteSharpIcon from '@mui/icons-material/EventNoteSharp';
 import Agenda from 'components/Agenda';
+import Speakers from 'components/Speakers';
 
 const speakerIcon = <InterpreterModeSharpIcon style={{ width: '65px', height: '65px', color: 'white' }} />;
 const programIcon = <EventNoteSharpIcon style={{ width: '65px', height: '65px', color: 'white' }} />;
@@ -28,7 +29,9 @@ export default function Home() {
           width: '100%',
         }}
       >
-        <HomePageSection icon={speakerIcon} title={'Oradores convidados'} />
+        <HomePageSection icon={speakerIcon} title={'Oradores convidados'}>
+          <Speakers />
+        </HomePageSection>
         <HomePageSection icon={programIcon} title={'Programa'}>
           <Agenda />
         </HomePageSection>
