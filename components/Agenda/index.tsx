@@ -1,12 +1,12 @@
 import AgendaItem from 'components/AgendaItem';
-import SpeakerNotesSharpIcon from '@mui/icons-material/SpeakerNotesSharp';
 import MeetingRoomSharpIcon from '@mui/icons-material/MeetingRoomSharp';
 import RestaurantSharpIcon from '@mui/icons-material/RestaurantSharp';
 import LocalCafeSharpIcon from '@mui/icons-material/LocalCafeSharp';
 import CollectionsBookmarkSharpIcon from '@mui/icons-material/CollectionsBookmarkSharp';
 import { AgendaContainer } from './Agenda.styled';
+import RecordVoiceOverSharpIcon from '@mui/icons-material/RecordVoiceOverSharp';
 
-const iconStyle = { width: '32px', height: '32px' };
+const iconStyle = { width: '40px', height: '40px' };
 
 const eventColors = {
   session: '#9f0d06',
@@ -21,7 +21,7 @@ const agenda = [
     day: firstDay,
     title: 'Doença Venosa Crónica',
     speaker: 'Dr. Manuel Silva',
-    icon: <SpeakerNotesSharpIcon style={iconStyle} />,
+    icon: <RecordVoiceOverSharpIcon style={iconStyle} />,
     mainColor: eventColors.session,
   },
   {
@@ -43,7 +43,7 @@ const agenda = [
     day: firstDay,
     title: 'Trombose Venosa',
     speaker: 'Dra. Ana Santos',
-    icon: <SpeakerNotesSharpIcon style={iconStyle} />,
+    icon: <RecordVoiceOverSharpIcon style={iconStyle} />,
     mainColor: eventColors.session,
   },
   {

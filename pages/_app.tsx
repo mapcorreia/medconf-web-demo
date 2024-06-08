@@ -1,5 +1,5 @@
 import 'styles/globals.css';
-import { Lato } from '@next/font/google';
+import { Lato } from "next/font/google";
 
 const primaryFont = Lato({
   subsets: ['latin'],
