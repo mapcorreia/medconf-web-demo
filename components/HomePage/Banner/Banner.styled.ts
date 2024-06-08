@@ -17,29 +17,45 @@ export const TextContainer = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   flex: 1,
-  gap: '4px',
-  padding: '24px 0 0 24px',
+  padding: '24px 0 0 48px',
   minWidth: 'fit-content',
 });
 
 export const FirstLine = styled(Typography)({
-  fontSize: '36px',
+  fontSize: '32px',
   color: 'white',
-  fontWeight: 'bold',
+  marginLeft: '40px',
   letterSpacing: 6,
-  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+  textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
 });
 
 export const SecondLine = styled(Typography)({
   fontSize: '64px',
   color: 'white',
+  lineHeight: '64px',
   fontWeight: 'bold',
   textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
 });
 
 export const ThirdLine = styled(Typography)({
+  fontSize: '64px',
+  color: 'white',
+  marginLeft: '40px',
+  fontWeight: 'bold',
+  textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
+});
+
+export const FourthLine = styled(Typography)({
+  fontSize: '20px',
+  marginLeft: '24px',
+  color: 'white',
+  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+});
+
+export const FifthLine = styled(Typography)({
   fontSize: '32px',
   color: '#D95650',
+  marginTop: '120px',
   letterSpacing: '6px',
   textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
 });
@@ -54,26 +70,28 @@ export const ImageContainer = styled('div')({
 export const RightContainer = styled('div')({
   right: 0,
   flex: 1,
+  gap: '24px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
 });
 
-export const RegistryButton = styled('button')({
-  background: '#d95650',
-  fontSize: '24px',
-  color: 'white',
-  height: '48px',
-  width: '220px',
-  borderRadius: '12px',
-  textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
-  boxShadow: '0px 0px 6px 0px rgba(0,0,0,0.75)',
+export const CongressDays = styled(Typography)({
+  textAlign: 'center',
+  color: '#7A120F',
+  fontSize: '72px',
+  fontWeight: 'bold',
+  textShadow: '0px 2px 8px rgba(255, 255, 255, 0.25)',
+});
 
-  '&:hover': {
-    opacity: 0.8,
-    cursor: 'pointer',
-  },
+export const CongressMonth = styled(Typography)({
+  textAlign: 'center',
+  color: '#7A120F',
+  fontSize: '60px',
+  lineHeight: '60px',
+  fontWeight: 'bold',
+  textShadow: '0px 2px 8px rgba(255, 255, 255, 0.25)',
 });
 
 export const HeartBeating = styled(Image)({
