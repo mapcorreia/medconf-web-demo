@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles';
-import Image from 'next/image';
 import { Typography } from '@mui/material';
+import Image from 'next/image';
 
 type BannerContainerProps = {
   height: number;
@@ -14,12 +14,12 @@ export const BannerContainer = styled('div')<BannerContainerProps>(({ height }) 
 }));
 
 export const TextContainer = styled('div')({
-  position: 'absolute',
   display: 'flex',
   flexDirection: 'column',
-  padding: '12px',
-  gap: '4px',
   flex: 1,
+  gap: '4px',
+  padding: '24px 0 0 24px',
+  minWidth: 'fit-content',
 });
 
 export const FirstLine = styled(Typography)({
@@ -31,7 +31,7 @@ export const FirstLine = styled(Typography)({
 });
 
 export const SecondLine = styled(Typography)({
-  fontSize: '70px',
+  fontSize: '64px',
   color: 'white',
   fontWeight: 'bold',
   textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
@@ -45,19 +45,42 @@ export const ThirdLine = styled(Typography)({
 });
 
 export const ImageContainer = styled('div')({
-  position: 'absolute',
   display: 'flex',
-  width: '100%',
-  flex: 1,
   alignItems: 'center',
   justifyContent: 'center',
+  flex: 3,
+});
+
+export const RightContainer = styled('div')({
+  right: 0,
+  flex: 1,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  flexDirection: 'column',
+});
+
+export const RegistryButton = styled('button')({
+  background: '#d95650',
+  fontSize: '24px',
+  color: 'white',
+  height: '48px',
+  width: '220px',
+  borderRadius: '12px',
+  textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
+  boxShadow: '0px 0px 6px 0px rgba(0,0,0,0.75)',
+
+  '&:hover': {
+    opacity: 0.8,
+    cursor: 'pointer',
+  },
 });
 
 export const HeartBeating = styled(Image)({
   position: 'absolute',
   marginLeft: '28px',
   marginTop: '10px',
-  animation: 'beat 1.3s infinite',
+  animation: 'beat 1.3s 1', //infinite
   '@keyframes beat': {
     '0%, 100%': {
       transform: 'scale(1.1)',
