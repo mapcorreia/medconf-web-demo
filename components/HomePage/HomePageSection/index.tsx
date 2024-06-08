@@ -1,5 +1,5 @@
-import SectionMarker from 'components/SectionMarker';
-import { CardHeader, CardTitle, SectionMarkerContainer } from './HomePageSection.styled';
+import SectionMarker from 'components/HomePage/SectionMarker';
+import { CardHeader, CardTitle, HomePageSectionContainer } from './HomePageSection.styled';
 
 type HomePageSectionProps = {
   icon: React.ReactNode;
@@ -10,13 +10,13 @@ type HomePageSectionProps = {
 
 const HomePageSection = ({ icon, title, children, handleItemClick }: HomePageSectionProps) => {
   return (
-    <SectionMarkerContainer onClick={handleItemClick}>
+    <HomePageSectionContainer onClick={handleItemClick}>
       <CardHeader>
         <SectionMarker icon={icon} />
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       {children}
-    </SectionMarkerContainer>
+    </HomePageSectionContainer>
   );
 };
 

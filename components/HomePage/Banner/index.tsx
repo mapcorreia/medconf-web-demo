@@ -38,7 +38,7 @@ const Banner = () => {
           <RegistryButton onClick={handleButtonClick}>Inscrição</RegistryButton>
         </RightContainer>
       </BannerContainer>
-      <div style={{ background: '#d95650', height: '42px' }} />
+      <div style={{ background: '#d95650', height: '20px' }} />
     </>
   );
 };

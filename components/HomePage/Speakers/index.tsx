@@ -1,4 +1,4 @@
-import SpeakerItem from 'components/SpeakerItem';
+import SpeakerItem from 'components/HomePage/SpeakerItem';
 import { SpeakersContainer } from './Speakers.styled';
 
 const speakers = [

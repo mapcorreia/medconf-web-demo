@@ -1,4 +1,4 @@
-import AgendaItem from 'components/AgendaItem';
+import AgendaItem from 'components/HomePage/AgendaItem';
 import MeetingRoomSharpIcon from '@mui/icons-material/MeetingRoomSharp';
 import RestaurantSharpIcon from '@mui/icons-material/RestaurantSharp';
 import LocalCafeSharpIcon from '@mui/icons-material/LocalCafeSharp';
